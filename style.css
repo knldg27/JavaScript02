@@ -58,7 +58,7 @@ button.two:hover {
   color: #b68fa2;
 }
 
-p {
+p#demo02 {
   padding-left: 40px;
   font-size: 25px;
   font-weight: bold;
@@ -83,4 +83,11 @@ button.three {
 button.three:hover {
   background-color: #586f77;
   color: #b68fa2;
+}
+
+p#demo03 {
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #586f77;
 }
