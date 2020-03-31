@@ -91,3 +91,8 @@ p#demo03 {
   font-weight: bold;
   color: #586f77;
 }
+
+.quote {
+  max-width: 50%;
+  padding-top: 50px;
+}
