@@ -94,5 +94,28 @@ p#demo03 {
 
 .quote {
   max-width: 50%;
+  min-width: auto;
   padding-top: 50px;
+  align-self: center;
+  position: absolute;
+}
+
+button.four {
+  background-color: #b68fa2;
+  border-color: #acbcb1;
+  border-radius: 5px;
+  border-width: 4px;
+  margin-left: 40px;
+  height: 50px;
+  width: 475px;
+  font-family: futura;
+  font-size: 20px;
+  font-weight: bold;
+  color: #acbcb1;
+  outline-color: #b68fa2;
+}
+
+button.four:hover {
+  background-color: #acbcb1;
+  color: #b68fa2;
 }
