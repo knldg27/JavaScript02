@@ -4,9 +4,10 @@ body {
 }
 
 .logo {
-  max-width: 10%;
+  max-width: 21%;
   padding-left: 40px;
   padding-top: 10px;
+  padding-bottom: 50px;
 }
 
 li {
@@ -15,7 +16,12 @@ li {
   padding-right: 25px;
   font-size: 25px;
   font-weight: bold;
-  color: #333b3e;
+  color: #3e555e;
+}
+
+ul {
+  bottom: 0;
+  position: fixed;
 }
 
 button.one {
@@ -95,7 +101,7 @@ p#demo03 {
 .quote {
   max-width: 50%;
   min-width: auto;
-  padding-top: 50px;
+  padding-top: 75px;
   align-self: center;
   position: absolute;
 }
