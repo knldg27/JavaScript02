@@ -6,5 +6,5 @@ button.onclick = function() {
 }
 
 function visitPage(){
-        window.location='https://barackobama.com/';
+        window.open ('https://barackobama.com/', '_blank');
     }
