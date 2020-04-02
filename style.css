@@ -10,6 +10,11 @@ body {
   padding-bottom: 50px;
 }
 
+.footer {
+  text-decoration: none;
+  color: #3e555e;
+}
+
 li {
   list-style: none;
   display: inline;
