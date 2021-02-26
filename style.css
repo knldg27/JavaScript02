@@ -27,6 +27,7 @@ li {
 ul {
   bottom: 0;
   position: fixed;
+  background-color: #acbcb1;
 }
 
 button.one {
@@ -103,14 +104,6 @@ p#demo03 {
   color: #586f77;
 }
 
-.quote {
-  max-width: 50%;
-  min-width: auto;
-  padding-top: 75px;
-  align-self: center;
-  position: absolute;
-}
-
 button.four {
   background-color: #b68fa2;
   border-color: #acbcb1;
@@ -129,4 +122,72 @@ button.four {
 button.four:hover {
   background-color: #acbcb1;
   color: #b68fa2;
+}
+
+.text-holder {
+  margin: 40px;
+  font-family: georgia;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#searchbar {
+  float: right;
+  position:fixed;
+  right: 25px;
+  top: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.squares {
+  width: 25%;
+  height: 200px;
+  margin-top: 0px;
+  margin-left: 40px;
+}
+
+#first-square {
+    background-color: #3e555e;
+    position: absolute;
+}
+
+#second-square {
+    border: 5px solid #fff;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    z-index: 1;
+}
+
+.gradient-block {
+  position: relative;
+  bottom: 325px;
+  right: 40px;
+  border-radius: 10px;
+  width: 20%;
+  height: 100px;
+  background: linear-gradient(35deg, #3e555e, #acbcb1);
+  float: right;
+}
+
+.gradient-block:hover {
+  width: 19%;
+  height: 90px;
+  transform: skewx(24deg);
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0px 0px white;
 }
