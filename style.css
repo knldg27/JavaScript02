@@ -168,7 +168,7 @@ button.four:hover {
   border-radius: 10px;
   width: 20%;
   height: 100px;
-  background: linear-gradient(35deg, #3e555e, #acbcb1);
+  background: linear-gradient(35deg, #3e555e, #b68fa2);
   float: right;
 }
 
@@ -178,16 +178,115 @@ button.four:hover {
   transform: skewx(24deg);
 }
 
-.center {
+.moon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 30px;
+  left: 60px;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 10px 0px 0px white;
+}
+
+.heart {
   position: absolute;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
+  background-color: #acbcb1;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg) ;
+}
+
+.heart::after {
+  background-color: #acbcb1;
+  content: "";
   border-radius: 50%;
-  box-shadow: 25px 10px 0px 0px white;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart::before {
+  content: "";
+  background-color: #acbcb1;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+.animate {
+  height: 40px;
+  width: 70%;
+  background: black;
+  margin: 50px auto;
+  border-radius: 5px;
+  position: relative;
+  animation: rainbow infinite;
+}
+
+#rect {
+  animation-name: rainbow;
+  animation-duration: 4s;
+}
+@keyframes rainbow {
+  0% {
+    background-color: #333b3e;
+    top: 0px;
+  }
+  25% {
+    background-color: #586f77;
+    top: 50px;
+  }
+  50% {
+    background-color: #acbcb1;
+    top: -25px;
+  }
+  100% {
+    background-color: #333b3e;
+    top: 0px;
+  }
+}
+
+.balls {
+  border-radius: 50%;
+  background: linear-gradient(
+    35deg,
+    #ccffff,
+    #ffcccc
+  );
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#ball1 {
+  left:27%;
+animation-timing-function: linear;
+}
+#ball2 {
+  left:56%;
+animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 249px;
+  }
 }
